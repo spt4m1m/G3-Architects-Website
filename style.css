@@ -100,3 +100,60 @@ img {
     width: 100%;
     margin-top: 30px;
 }
+
+
+
+/* team feature css  */
+.team-feature-section {
+    padding: var(--primary-padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-feature-images {
+    max-width: 48%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.team-feature-image {
+    overflow: hidden;
+}
+
+.team-feature-image img {
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+}
+
+.team-feature-image:hover img {
+    filter: grayscale(100%);
+    transform: scale(1.3);
+}
+
+.team-feature-contents {
+    width: 46%;
+}
+
+.team-feature-title {
+    font-size: 32px;
+    color: black;
+}
+
+.team-feature-title b {
+    color: black;
+    font-weight: 700;
+}
+
+.team-feature-title span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.team-feature-text {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 0;
+}
