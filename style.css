@@ -279,3 +279,92 @@ img {
 .some-facts-card-text {
     font-size: 14px;
 }
+
+
+/* Testimonial section css  */
+.testimonial-section {
+    padding: var(--primary-padding);
+}
+
+.testimonial-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+.testimonial img {
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+}
+
+.testimonial blockquote {
+    margin: 0;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    background-color: var(--primary-color-transparent);
+    padding: 30px 50px 65px 50px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 -50px;
+    line-height: 1.6em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+    font-family: 'FontAwesome';
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+}
+
+.testimonial blockquote:before {
+    top: 35px;
+    left: 20px;
+}
+
+.testimonial blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 35px;
+}
+
+.testimonial .person {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.testimonial .person h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800;
+}
+
+.testimonial .person h5 span {
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+}
