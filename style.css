@@ -229,3 +229,53 @@ img {
     font-size: 30px;
     line-height: 40px;
 }
+
+
+/* some facts css  */
+.some-facts-section {
+    padding: var(--primary-padding);
+}
+
+.some-facts-text {
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+
+.some-facts-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 60px;
+}
+
+
+.some-facts-card {
+    background-color: rgba(255, 143, 14, 0.100);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    font-weight: 800;
+    color: black;
+    transition: .3s;
+}
+
+.some-facts-card:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+.some-facts-card-number {
+    font-size: 24px;
+    margin: 5px 0 0;
+}
+
+.some-facts-card-text {
+    font-size: 14px;
+}
