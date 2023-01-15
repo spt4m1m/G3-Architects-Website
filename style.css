@@ -6,7 +6,7 @@
     --primary-font: 'Nunito', sans-serif;
     --primary-color: #FF900E;
     --primary-color-transparent: hsla(32, 100%, 53%, 0.100);
-    --primary-padding: 30px 200px;
+    --primary-padding: 50px 200px;
 }
 
 /* defautl css  */
@@ -40,7 +40,7 @@ img {
 
 /* header css  */
 .header {
-    padding: var(--primary-padding);
+    padding: 20px 200px;
     background-color: var(--primary-color-transparent);
 }
 
@@ -156,4 +156,76 @@ img {
     font-size: 18px;
     font-weight: 400;
     margin: 20px 0;
+}
+
+
+
+/* feature css  */
+.feature-section {
+    padding: var(--primary-padding);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.features-image-container {
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.feactures-card-container {
+    width: 44%;
+}
+
+.features-image-container img {
+    width: 100%;
+}
+
+.features-header {
+    margin: 0px 0px 18px 15px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.features-header::after {
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: -15px;
+    top: 0;
+    border-radius: 5px;
+}
+
+.features-text {
+    font-size: 18px;
+    margin: 0px 0;
+}
+
+.features-card {
+    padding: 15px;
+    box-shadow: 0 0 5px 2px rgba(198, 198, 198, 0.213);
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.exprience-card {
+    position: absolute;
+    padding: 30px 35px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    top: 79%;
+    left: 48%;
+}
+
+.exprience-card h3 {
+    font-size: 30px;
+    line-height: 40px;
 }
