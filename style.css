@@ -368,3 +368,28 @@ img {
     text-transform: none;
     display: block;
 }
+
+
+/* sponsor section css  */
+.sponsor-section {
+    padding: var(--primary-padding);
+    text-align: center;
+}
+
+.sponsors-section-text {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.sponsors-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.sponsors-img-container img {
+    height: 25px;
+    filter: grayscale();
+}
