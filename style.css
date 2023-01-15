@@ -74,6 +74,10 @@ img {
     font-weight: 500;
 }
 
+.navbar .menu-icon {
+    display: none;
+}
+
 
 /* header contents  */
 .header-content {
@@ -543,5 +547,42 @@ img {
     /* footer section responsvie css  */
     .footer div p {
         font-size: 14px;
+    }
+}
+
+/* Responsive for mobile device - 412px */
+@media only screen and (max-width: 412px) {
+    .navbar>ul {
+        display: none;
+    }
+
+    .logo h3 {
+        font-size: 30px;
+    }
+
+    .header-caption {
+        font-size: 28px;
+    }
+
+    .header-text {
+        padding: 0;
+    }
+
+    .navbar .menu-icon {
+        display: inline-block;
+    }
+
+    .exprience-card {
+        top: 35%;
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .exprience-card h3 {
+        font-size: 15px;
+    }
+
+    .features-header::after {
+        left: 20%;
     }
 }
