@@ -1,3 +1,102 @@
-h1 {
-    color: red;
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+/* root vars  */
+:root {
+    --primary-font: 'Nunito', sans-serif;
+    --primary-color: #FF900E;
+    --primary-color-transparent: hsla(32, 100%, 53%, 0.100);
+    --primary-padding: 30px 200px;
+}
+
+/* defautl css  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+img {
+    max-width: 100%;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.primary-btn:hover {
+    background-color: black;
+    box-shadow: 3px 4px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* header css  */
+.header {
+    padding: var(--primary-padding);
+    background-color: var(--primary-color-transparent);
+}
+
+/* header menu  */
+.navbar {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: black;
+    font-size: 25px;
+    line-height: 52px;
+}
+
+.navbar>ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar>ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* header contents  */
+.header-content {
+    text-align: center;
+}
+
+.header-caption {
+    font-size: 48px;
+    margin-top: 20px;
+}
+
+.header-text {
+    margin: 40px 0;
+    font-size: 18px;
+    padding: 0 50px;
+    font-weight: 500;
+}
+
+.header-btn {
+    margin-bottom: 20px;
+}
+
+.hero-img img {
+    width: 100%;
+    margin-top: 30px;
 }
